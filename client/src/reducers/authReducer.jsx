@@ -1,4 +1,4 @@
-export default function (state={}, action) {
+export const authReducer = (state={}, action) => {
   switch (action.type) {
     default:
       return state;
