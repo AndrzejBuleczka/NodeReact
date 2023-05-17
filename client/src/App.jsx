@@ -1,5 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { connect } from "react-redux";
+import * as actions from './actions';
 
 import Header from "./components/Header";
 const Dashboard = () => <h2>Dashboard</h2>;
@@ -7,6 +9,10 @@ const SurveyNew = () => <h2>SurveyNew</h2>;
 const Landing = () => <h2>Landing</h2>;
 
 const App = () => {
+  useEffect(() => {
+
+  }, [])
+
   return (
     <div className="container">
       <Router>
@@ -21,4 +27,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default connect(null, actions)(App);
