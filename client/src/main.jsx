@@ -5,8 +5,10 @@ import { createStore, applyMiddleware } from "redux";
 import App from "./App.jsx";
 import "materialize-css/dist/css/materialize.min.css";
 import reducers from "./reducers/index.jsx";
+import reduxThunk from "redux-thunk";
 
-const store = createStore(reducers, {}, applyMiddleware());
+
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
