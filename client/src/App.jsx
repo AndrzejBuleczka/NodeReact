@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { connect } from "react-redux";
-import * as actions from './actions';
+import * as actions from "./actions";
 
 import Header from "./components/Header";
 const Dashboard = () => <h2>Dashboard</h2>;
@@ -10,8 +10,8 @@ const Landing = () => <h2>Landing</h2>;
 
 const App = () => {
   useEffect(() => {
-
-  }, [])
+    actions.fetchUser();
+  }, []);
 
   return (
     <div className="container">
