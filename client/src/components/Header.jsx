@@ -2,6 +2,17 @@ import { Component } from "react";
 import { connect } from "react-redux";
 
 class Header extends Component {
+  renderContent() {
+    switch (this.props.auth) {
+      case null:
+        return "loading";
+      case false:
+        return "logged out";
+      default:
+        return "logged in";
+    }
+  }
+
   render() {
     console.log(this.props);
     return (
@@ -10,7 +21,7 @@ class Header extends Component {
           <a className="left brand-logo">Emaily</a>
           <ul className="right">
             <li>
-              <a>Login with Google</a>
+              <a>{this.renderContent()}</a>
             </li>
           </ul>
         </div>
