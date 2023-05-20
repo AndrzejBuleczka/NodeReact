@@ -17,3 +17,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Provider>
   </React.StrictMode>
 );
+
+console.log('Environment is', process.env.NODE_ENV);
