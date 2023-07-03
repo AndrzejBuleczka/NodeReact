@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { connect } from "react-redux";
@@ -5,7 +6,7 @@ import * as actions from "./actions";
 
 import Header from "./components/Header";
 import Landing from "./components/Landing";
-const Dashboard = () => <h2>Dashboard</h2>;
+import Dashboard from "./components/Dashboard";
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 class App extends Component {
