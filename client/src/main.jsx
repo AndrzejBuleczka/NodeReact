@@ -6,6 +6,8 @@ import App from "./App.jsx";
 import "materialize-css/dist/css/materialize.min.css";
 import reducers from "./reducers/index.jsx";
 import reduxThunk from "redux-thunk";
+
+// dev helpers
 import axios from "axios";
 window.axios = axios;
 
@@ -18,5 +20,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Provider>
   </React.StrictMode>
 );
-
-console.log("Environment is", process.env.NODE_ENV);
