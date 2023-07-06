@@ -1,9 +1,9 @@
 import _ from "lodash";
 import React from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import formFields from "./formFields";
-import { withRouter } from "react-router-dom";
-import * as actions from "../../actions";
+// import { withRouter } from "react-router-dom";
+// import * as actions from "../../actions";
 
 // eslint-disable-next-line react/prop-types
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
@@ -41,4 +41,5 @@ function mapStateToProps(state) {
   return { formValues: state.form.surveyForm.values };
 }
 
-export default connect(mapStateToProps, actions)(withRouter(SurveyFormReview));
+// export default connect(mapStateToProps, actions)(withRouter(SurveyFormReview));
+export default SurveyFormReview;
