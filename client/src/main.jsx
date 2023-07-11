@@ -1,6 +1,6 @@
 import "materialize-css/dist/css/materialize.min.css";
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import App from "./App.jsx";
